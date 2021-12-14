@@ -1,6 +1,6 @@
 ## Telegram Group manage bot
 > :warning: **This README will not teaching you with deploying the bot**.<br><br>
-> :heavy_exclamation_mark: **The deploying tutorial is on [here](https://github.com/manho30/Telegram-Pm-Bot/blob/main/README.md)**
+> :heavy_exclamation_mark: **[Here is deploying tutorial](https://github.com/manho30/Telegram-Pm-Bot/blob/main/README.md)**
 
 ## What can this bot do??
 - Group command
@@ -38,4 +38,4 @@
 ***Ban the member by `/ban`*** <br><br>
 **Unpin all**
 ![This is an image](others/unpinAll.jpg) 
-***Thoughtful function with `unpinall`***<br><br>
+***Thoughtful function with `/unpinall`***<br><br>
