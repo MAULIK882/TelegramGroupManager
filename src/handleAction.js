@@ -1,6 +1,6 @@
 function handleAction(body) {
     body.message.text = body.message.text.toLowerCase();
-    body.message.text = body.message.text.replace(/@temptestbot2/g, '');
+    body.message.text = body.message.text.replace(@YOURBOTUSERNAME/g, '');
     /** make it to an array instead it has parameters **/
     var paras = body.message.text.trim().split(" ");
     /** remove empty strings **/
