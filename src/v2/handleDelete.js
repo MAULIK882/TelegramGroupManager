@@ -52,8 +52,8 @@ function handleDelete(body) {
                         if(deleteSentMsg.ok == true){
                             var deleteSentPayload = {
                                 "method": "deleteMessage", 
-                                "chat_id": delNonAdminComand2.result.chat.id,
-                                "message_id": delNonAdminComand2.result.message_id
+                                "chat_id": deleteSentMsg.result.chat.id,
+                                "message_id": deleteSentMsg.result.message_id
                             }
                             Utilities.sleep(28000)
                             postTelegram(deleteSentPayload)
