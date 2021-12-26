@@ -1,4 +1,4 @@
-## This is an open source project, produced Man Ho
+## This is an open source project, open source by Man Ho
 This project uses the GNU GPL license, any deployment using the code must be distributed under the same license.
 ## Telegram Group manage bot
 > :warning: **This README will not teaching you with deploying the bot**.<br><br>
