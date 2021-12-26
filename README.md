@@ -1,8 +1,11 @@
+## This is an open source project, produced Man Ho
+This project uses the GNU GPL license, any deployment using the code must be distributed under the same license.
 ## Telegram Group manage bot
 > :warning: **This README will not teaching you with deploying the bot**.<br><br>
 > :heavy_exclamation_mark: **[Here is deploying tutorial](https://github.com/manho30/Telegram-Pm-Bot/blob/main/README.md)**
 
 ## What can this bot do??
+- Message self-destruct
 - Group command
 ```Json
 /pin - Pin a message 
