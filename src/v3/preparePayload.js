@@ -4,7 +4,9 @@ function handleMessage(body){
         if(isCallingMe){
             return handleCommand(body)
         }
-    }
+    } else if(body.message.sticker){
+        convertApi(body)
+    } 
 }
 function preparePayload(body){
     if(body.message){
