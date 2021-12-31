@@ -23,7 +23,7 @@ function aiChat(body) {
         } else {
                 if (body.message.reply_to_message.from.id == Const.botId || body.message.text.indexOf("@sakuramiyabot") >= 0) {
                         body.message.text = body.message.text.replace("@sakuramiyabot", "")
-                        if (body.message.text == null) {
+                        if (body.message.text === null) {
                                 body.message.text = "你好"
                         }
                         var request = {
