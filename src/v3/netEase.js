@@ -25,7 +25,7 @@ function callNetEase(body) {
             }
             return sendMsg;
         } else {
-            if (body.message.reply_to_message.text.indexOf("音乐，歌词，歌手！") >= 0 || body.message.reply_to_message.text.indexOf("免责声明") >= 0 || body.message.reply_to_message.text.indexOf("(ᗒᗨᗕ)") >= 0 || body.message.reply_to_message.text.indexOf("(≧▽≦)") >= 0) {
+            if (body.message.reply_to_message.text.indexOf("音乐，歌词，歌手！") >= 0 || body.message.reply_to_message.text.indexOf("免责声明") >= 0) {
 
                 var Const = {}
                 Const.netEaseLink = "https://music-api.heheda.top/"
@@ -389,7 +389,7 @@ function callNetEase(body) {
                     var answerNonBelong = {
                         "method": "answerCallbackQuery",
                         "callback_query_id": body.callback_query.id,
-                        "text": "又不是问你，自作多情 ᥬ🌚᭄",
+                        "text": "又不是问你，自作多情 ᥬ😡᭄",
                         "show_alert": true
                     };
                     postTelegram(answerNonBelong)
