@@ -13,8 +13,8 @@ function generateQr(body) {
                 "method": "sendPhoto",
                 "chat_id": body.message.chat.id,
                 "reply_to_message_id": body.message.message_id,
-                "caption": param[1], 
-                "photo": "https://api.qrserver.com/v1/create-qr-code/?size=450x450&data=" + param[1]
+                "caption": body.message.text.replace("/qr", ""), 
+                "photo": "https://api.qrserver.com/v1/create-qr-code/?size=450x450&data=" + body.message.text.replace("/qr", "")
             }
             return sendQR
         } else {
@@ -22,7 +22,7 @@ function generateQr(body) {
                 "method": "sendMessage", 
                 "chat_id": body.message.chat.id,
                 "reply_to_message_id": body.message.message_id,
-                "text": "failed to get qr code: unable to requestAPI: Bad request: Insufficient parameters."
+                "text": "Parameters (text) are required."
             }
             postTelegram(sendNoParam)
         }
