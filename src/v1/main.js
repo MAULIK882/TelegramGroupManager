@@ -95,7 +95,7 @@ var response, res;
             "method": "sendMessage",
             "chat_id": "" ,
             "text": `Error Log:\n\n ${e}`         
-        }
+        } 
         var data = {
             'contentType': "application/json",
             'method': "post",
